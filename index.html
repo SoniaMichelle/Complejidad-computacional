@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Coplejidad Computacional</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1 class="text-center"><strong>¿Que es un algoritmo?</strong></h1>
+          <span>Un algoritmo es una secuencia de instrucciones cuyo objetivo es la resolución de un <strong>problema</strong>.
+            Siempre que se analiza y evalúa adecuadamente la efectividad de una solución, disminuye drásticamente 
+            el costo que representa su producción y mantenimiento, pues los recursos que se invierten posteriormente 
+            en codificación, pruebas y revisión es mucho menor siempre (como el tiempo, dinero y talento humano).
+            A la idea del tiempo de ejecución se le conoce como <strong>complejidad temporal</strong>, y a la idea de la memoria requerida 
+            para resolver el problema se le denomina <strong>complejidad espacial</strong>. Dichos valores se encuentran en función del <strong>tamaño 
+              del problema</strong> (valor o valores dictados por el número de elementos con los que un algoritmo trabaja).
+            El ritmo de crecimiento, es donde evaluaremos cómo crece el número de instrucciones necesarias para resolver el 
+            problema en función del tamaño del mismo. </span>
+
+            <h3><strong>➢ Constante:</strong>O(1)</h3>
+            <span>Es la más sencilla y siempre presenta un tiempo de ejecución constante</span>
+            <img src="img/c1.jpg" alt="" style="width: 700px;">
+
+            <h3><strong>➢ Logaritmico:</strong>O(\log x)</h3>
+            <span>Estos algoritmos indican que el tiempo es menor que el tamaño de los datos de entrada.
+            Este algoritmo busca un elemento en un array ordenado dividiendo el array en 2 mitades, 
+              identifica en cual de las mitades se encuentra, luego divide esa parte en 2 mitades iguales 
+              y busca nuevamente hasta encontrar el elemento, es un algoritmo recursivo</span>
+            <img src="img/2.png" alt="" style="width: 700px;">
+            <img src="img/2l.jpg  " alt="" style="width: 700px;">
+
+            <h3><strong>➢ Lineal:</strong> O(n)</h3>
+            <span>El tiempo crece linealmente mientras crece los datos.</span>
+            <br>
+            <span>Tiempo de ejecución proporcional al tamaño de la entrada.</span>
+            <br>
+            <span>Ejemplo: Calcular el máximo de n números a1,…, an.</span>
+              <img src="img/a.png" alt="" style="width: 600px;">
+              <img src="img/lineal3.jpg" alt="" style="width: 600px;">
+
+            <h3><strong>➢ Enelogarítmico:</strong>O(n \log x)</h3>
+            <span>Aparecen en muchos algoritmos recursivos
+              p.ej. Estrategia “divide y vencerás”
+              </span>
+              <img src="img/c.png" alt="" style="width: 750px;">
+              <img src="img/e.jpg" alt="" style="width: 600px;">
+             
+            <h3><strong>➢ Cuadratico:</strong>O(n \log x)</h3>
+            <span>Aparece cuando tenemos que enumerar todas las
+              parejas posibles de elementos de un conjunto.
+              </span>
+              <br>
+              <span>Ejemplo: Dado un conjunto de puntos en el plano (x1,y1),...,
+                (xn,...yn),encontrar la pareja más cercana</span>
+              <img src="img/b.png" alt="" style="width:600px;">
+              
+              <h3><strong>➢ Polinomial:</strong></h3>
+            <span>Un algoritmo de tiempo polinomial se define como aquel con función 
+              de complejidad temporal dentro de una cota superior asintótica (denominada a veces "orden") 
+              <strong>O(p(n))</strong> para alguna función polinómica p, donde n denota el tamaño de la entrada. 
+              Los algoritmos de tiempo exponencial, <strong>O(e^n)</strong> son los que el número de ciclos que tienen 
+              que realizarse con el algoritmo es proporcional a la función e^n de modo que el poder 
+              computacional necesario para correr el algoritmo crece de forma exponencial al tamaño <strong>n</strong> del problema.
+              </span>
+
+              <h3><strong>➢ Exponencial:</strong>O(c^x)</h3>
+            <span>Es uno de los peores complejidades algorítmicas. Sube demasiado a medida que crece los datos de entrada. 
+              Aparece en muchos problemas de tipo combinatorio
+            </span>
+              <img src="img/d.jpg" alt="" style="width: 750px;">
+          
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
