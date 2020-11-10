@@ -12,5 +12,9 @@ body{
     padding: 60px;
     background: #fff;
     margin-top: 50px;
-   
+}
+.container img{
+    
+    margin-right: 28px;
+    margin-bottom: 20px;
 }
